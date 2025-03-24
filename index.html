@@ -43,15 +43,16 @@
         .hero-text {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         .hero-title {
             font-size: 64px;
             font-weight: 700;
             font-family: 'Poppins', sans-serif;
-            color: #ffffff;
+            color: #FF6F61; /* rich coral tone */
             margin: 0;
             white-space: nowrap;
         }
@@ -333,7 +334,9 @@
             transform: translateY(0);
         }
         .timeline-content {
-        max-width: 38%;
+        max-width: 34%;
+        margin-left: 20px;
+        margin-right: 20px;
         background: rgba(40, 40, 40, 0.9);
         padding: 20px;
         border-radius: 10px;
@@ -343,7 +346,7 @@
         word-break: break-word;
         }
         .timeline-year {
-            background-color: #003366;
+            background-color: teal;
             color: white;
             padding: 10px 20px;
             border-radius: 30px;
@@ -362,7 +365,7 @@
         }
         
         .timeline-content h3 a {
-            color: #003366;
+            color: teal;
         }
         
         .nav-links a[href="snowflake.html"] {
@@ -415,7 +418,22 @@
         color: white;
         }
         
-    </style>
+        .schedule-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #36d1dc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .schedule-button:hover {
+            background-color: #00a8cc;
+        }
+        </style>
 </head>
 <body>
 
@@ -436,9 +454,9 @@
             </a>
         </div>
         <div class="nav-links">
-            <a href="tableau.html">Tableau</a>
-            <a href="powerbi.html">Power BI</a>
-            <a href="snowflake.html">Snowflake</a>
+            <a href="pages/tableau.html">Tableau</a>
+            <a href="pages/powerbi.html">Power BI</a>
+            <a href="pages/snowflake.html">Snowflake</a>
         </div>
     </nav>
 
@@ -447,12 +465,11 @@
         <div class="hero-left">
             <div class="hero-text">
                 <h1 class="hero-title">Bharath Potru</h1>
-                <p class="hero-role">Data Architect | Business Intelligence Specialist</p>
-                <p class="hero-desc">Building scalable, automated, and data-driven solutions.</p>
+                <p class="hero-role">Business Intelligence Developer | Data Architect</p>
             </div>
         </div>
         <div class="hero-right">
-            <img src="bharath.png" alt="Bharath Potru" class="hero-profile-large">
+            <img id="profileZoom" src="images/bharath.png" alt="Bharath Potru" class="hero-profile-large">
         </div>
     </section>
 
@@ -467,7 +484,7 @@
                     <div class="timeline-year">2025</div>
                 </div>
                 <div class="timeline-content">
-                    <h3><a href="autodesk.html">Autodesk, Texas</a></h3>
+                    <h3><a href="pages/autodesk.html">Autodesk, Texas</a></h3>
                     <p>Leading scalable data solutions in Snowflake while optimizing BI reporting.</p>
                 </div>
             </div>
@@ -477,7 +494,7 @@
                     <div class="timeline-year">2024</div>
                 </div>
                 <div class="timeline-content">
-                    <h3><a href="theatro.html">Theatro, Texas</a></h3>
+                    <h3><a href="pages/theatro.html">Theatro, Texas</a></h3>
                     <p>Developed a metadata-driven reporting model in Azure Synapse & automated workflows.</p>
                 </div>
             </div>
@@ -487,7 +504,7 @@
                     <div class="timeline-year">2023</div>
                 </div>
                 <div class="timeline-content">
-                    <h3><a href="signitives.html">Teladoc Health, Texas</a></h3>
+                    <h3><a href="pages/signitives.html">Teladoc Health, Texas</a></h3>
                     <p>Redesigned Power BI dashboards after migrating from Tableau, making insights 30% faster.</p>
                 </div>
             </div>
@@ -507,7 +524,7 @@
                     <div class="timeline-year">2021</div>
                 </div>
                 <div class="timeline-content">
-                    <h3><a href="avanti.html">Avanti Group, Hyderabad</a></h3>
+                    <h3><a href="pages/avanti.html">Avanti Group, Hyderabad</a></h3>
                     <p>Designed and automated Power BI dashboards, enhancing business intelligence capabilities.</p>
                 </div>
             </div>
@@ -517,7 +534,7 @@
                     <div class="timeline-year">2020</div>
                 </div>
                 <div class="timeline-content">
-                    <h3><a href="techiefrogs.html">Techiefrogs, Hyderabad</a></h3>
+                    <h3><a href="pages/techiefrogs.html">Techiefrogs, Hyderabad</a></h3>
                     <p>Started as a Data Analyst, transforming raw data into meaningful business reports.</p>
                 </div>
             </div>
@@ -526,16 +543,16 @@
     </section>
 
     <!-- 🎾 Personal Interests -->
-    <section class="personal animated">
+    <section class="personal animated" style="background: linear-gradient(to bottom, #121212, #1c1c1c);">
         <h2>Beyond Data: The Passion That Drives Me</h2>
         <p style="color: #f39c12; font-size: 18px;">Because strategy isn't just for data—it's for the game too!</p>
         <div class="interest-card animated">
-            <img src="badminton.png" alt="Badminton">
+            <img src="images/badminton.png" alt="Badminton">
             <p>Badminton - Precision, agility, and strategy. Just like optimizing a data model!</p>
         </div>
         <div class="interest-card animated">
-            <a href="https://link.chess.com/play/RmSLIy" target="_blank">
-                <img src="chess.png" alt="Chess">
+        <a href="https://chess.com/play/bharathcy99" target="_blank">
+                <img src="images/chess.png" alt="Chess">
             </a>
             <p>Chess - Every move matters. Thinking five steps ahead, just like in business intelligence.</p>
         </div>
@@ -546,6 +563,14 @@
     </button>
 
     <script src="script.js"></script>
+    <div id="zoomOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+      <img id="zoomedImage" src="images/bharath.png" style="max-width:90%; max-height:90%; border-radius:20px; box-shadow:0 0 20px rgba(255,255,255,0.4);" />
+    </div>
+    <section class="schedule animated" style="text-align: center; margin: 60px auto;">
+        <h2 style="color: #36d1dc; font-size: 28px; margin-bottom: 20px;">Let's Connect</h2>
+        <p style="color: #ccc; font-size: 18px;">Schedule a call with me to talk data, dashboards, or strategy!</p>
+        <a href="https://calendly.com/bharathcy999" target="_blank" class="schedule-button">📅 Schedule a Call</a>
+    </section>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const animatedElements = document.querySelectorAll('.animated');
@@ -585,8 +610,20 @@
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
 
-            checkScroll();
+        checkScroll();
+        
+        const profileImage = document.getElementById('profileZoom');
+        const zoomOverlay = document.getElementById('zoomOverlay');
+        const zoomedImage = document.getElementById('zoomedImage');
+
+        profileImage.addEventListener('click', () => {
+            zoomOverlay.style.display = 'flex';
         });
+
+        zoomOverlay.addEventListener('click', () => {
+            zoomOverlay.style.display = 'none';
+        });
+    });
         
     </script>
 </body>

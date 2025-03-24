@@ -51,6 +51,10 @@ body {
 
 .hero-text {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .hero-text h1 {
@@ -61,6 +65,8 @@ body {
 .hero-text p {
     font-size: 1.3em;
     margin-top: 10px;
+    display: inline;
+    white-space: nowrap;
 }
 
 .profile-pic {
@@ -286,4 +292,50 @@ html, body {
 .timeline-item:nth-child(even) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+}
+
+.gradient-bar {
+    display: none;
+    height: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.schedule {
+    margin-top: 60px;
+    padding: 60px 10%;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.schedule h2 {
+    color: #36d1dc;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.schedule p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.schedule-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #36d1dc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.schedule-button:hover {
+    background-color: #00a8cc;
+    transform: scale(1.05);
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Techiefrogs | Bharath Potru</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #1e1e1e;
+      color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      transition: background 0.5s ease-in-out;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero {
+      background: #2a3f5f;
+      padding: 50px 20px;
+      border-radius: 12px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.8s forwards ease-out;
+    }
+    .hero h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #ff8c00;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #e0e0e0;
+    }
+    .blog-section {
+      background: #2c2c2c;
+      padding: 35px;
+      margin: 25px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1.5s forwards ease-out;
+      animation-delay: 0.3s;
+      transition: transform 0.3s ease-in-out;
+    }
+    .blog-section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #36d1dc;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #36d1dc;
+      padding-bottom: 8px;
+      transition: all 0.3s ease;
+    }
+    .blog-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      text-align: justify;
+      padding: 0 12px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .back-button {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 12px 18px;
+      background: #444;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    .back-button:hover {
+      background: #555;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back-button">← Home</a>
+  <div class="container">
+    <section class="hero">
+      <h1>Techiefrogs: My Journey 🚀</h1>
+      <p>Transitioning from the vibrant world of college to the professional realm at Techiefrogs was a thrilling adventure. My curiosity for <span style='color:#ff8c00; font-weight:bold;'>data</span> ignited during my studies, and my first-hand experiences during my internship paved the way for my full-time role. The excitement of diving into analytics and reporting was both challenging and rewarding, as I learned to harness the power of <span style='color:#ff8c00; font-weight:bold;'>data</span> to drive impactful decisions.</p>
+    </section>
+
+    <section class="blog-section">
+      <h2>📊 Interactive Power BI Reports</h2>
+      <p>At Techiefrogs, I developed interactive <span style='color:#36d1dc; font-weight:bold;'>Power BI</span> reports that visualized sales performance, customer retention, and revenue tracking. These dashboards illuminated key trends and empowered our leadership team to make informed decisions that drove growth.</p>
+    </section>
+
+    <section class="blog-section">
+      <h2>🔄 Automating Reports for Real-Time Insights</h2>
+      <p>One of my key contributions was implementing automated refresh schedules for our reports. This innovation eliminated manual bottlenecks, granting the team <span style='color:#36d1dc; font-weight:bold;'>real-time insights</span> and allowing us to respond swiftly to market changes.</p>
+    </section>
+
+    <section class="blog-section">
+      <h2>✅ Ensuring Data Accuracy & Trust</h2>
+      <p>Throughout my time at Techiefrogs, I dedicated myself to identifying and fixing revenue discrepancies. This meticulous process significantly improved our <span style='color:#36d1dc; font-weight:bold;'>data accuracy</span>, ensuring our reports reflected true business performance and instilled confidence in our stakeholders.</p>
+    </section>
+
+    <section class="blog-section">
+      <h2>🎨 Enhancing Visual Storytelling</h2>
+      <p>To maintain consistency with our branding, I utilized engaging visual elements in our reports, ensuring they were not only functional but also aesthetically pleasing. This attention to detail helped create a cohesive experience across the portfolio website.</p>
+    </section>
+
+    <footer>
+      <p>Thank you for taking the time to learn about my journey at Techiefrogs. I look forward to continuing to leverage data for impactful decision-making.</p>
+    </footer>
+  </div>
+</body>
+</html>
