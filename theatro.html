@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatro | Bharath Potru</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1e1e1e;
+            color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .hero {
+            background: #2a3f5f;
+            padding: 50px 20px;
+            border-radius: 12px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.8s forwards ease-out;
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ff8c00;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+        .blog-section {
+            background: #2c2c2c;
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s forwards ease-out;
+            animation-delay: 0.3s;
+            transition: transform 0.3s ease-in-out;
+        }
+        .blog-section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #36d1dc;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #36d1dc;
+            padding-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+        .blog-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d0d0d0;
+            text-align: justify;
+            padding: 0 12px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .icon {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+        }
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            padding: 12px 18px;
+            background: #444;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #555;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Home</a>
+    <div class="container">
+        <section class="hero">
+            <h1>Theatro: My Journey 🚀</h1>
+            <p>Stepping into Theatro was like entering a vibrant world of possibilities. I quickly realized that I was faced with the challenge of transforming complex, manual workflows into seamless, <span style='color:#ff8c00; font-weight:bold;'>automated processes</span>. It was here that my journey of innovation began, and I embraced every moment of it.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Automating Data Workflows ⚙️</h2>
+            <p>In the beginning, I often found myself overwhelmed by the sheer volume of SQL queries that were necessary for reporting. It felt like an endless sea of information, where each report change required meticulous coding. However, I envisioned a different future. By creating a <span style='color:#ff8c00; font-weight:bold;'>metadata-driven reporting system</span>, I empowered users to <span style='color:#36d1dc; font-weight:bold;'>adjust report parameters</span> effortlessly, freeing them from the constant need for SQL queries and unlocking a whole new way of interacting with data. This shift didn’t just simplify the process; it transformed the way teams interacted with data, allowing them to focus on <span style='color:#36d1dc; font-weight:bold;'>insights</span> rather than struggle with technicalities. The convenience of this system was a game-changer, making reporting not only faster but also more intuitive.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Big Data Processing with Databricks 📊</h2>
+            <p>Handling vast datasets was both daunting and exhilarating. At Theatro, I dived into the world of <span style='color:#36d1dc; font-weight:bold;'>Databricks</span> and <span style='color:#36d1dc; font-weight:bold;'>PySpark</span>, where I learned to navigate the complexities of <span style='color:#ff8c00; font-weight:bold;'>big data</span>. I remember the first time I successfully cleaned a particularly messy log file; it felt like uncovering hidden treasures within chaos. Each scalable pipeline I built brought me closer to making data processing not just efficient, but also a source of clarity. The thrill of transforming raw data into actionable <span style='color:#36d1dc; font-weight:bold;'>insights</span> was a constant reminder of the impact our work could have, and it taught me the value of perseverance and creativity.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Optimized Report Distribution ⏳</h2>
+            <p>There’s a unique frustration that comes with waiting for critical <span style='color:#36d1dc; font-weight:bold;'>insights</span> when decisions hang in the balance. This realization drove me to develop an automated scheduling system for report distribution. I wanted to ensure that reports didn’t just arrive on time; they arrived precisely when they were needed. With this system in place, I felt a sense of relief wash over the team, knowing that we could trust the process. Role-based security added an extra layer of assurance, ensuring that sensitive information remained protected while still being accessible to those who needed it. This experience taught me the importance of reliability and foresight in our work.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Final Impact & Reflection 🌟</h2>
+            <p>Reflecting on my time at Theatro, I see a tapestry woven with threads of innovation, teamwork, and personal growth. Each challenge I faced was an opportunity to learn and evolve, not just as a professional but as an individual. The automation of workflows, the mastery of <span style='color:#ff8c00; font-weight:bold;'>big data</span>, and the transformation of reporting processes were not just achievements; they were milestones in a journey that reshaped the company and my own perspective on technology and collaboration. As I look ahead, I carry with me the lessons learned and the stories shared, ready to embrace the next chapter of my career.</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journey at Autodesk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #1e1e1e;
+      color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      transition: background 0.5s ease-in-out;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(135deg, #2a3f5f, #1e1e1e);
+      padding: 50px 20px;
+      border-radius: 12px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.8s forwards ease-out;
+    }
+    .hero h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #ff8c00;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #e0e0e0;
+    }
+    .blog-section {
+      background: #2c2c2c;
+      padding: 35px;
+      margin: 25px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1.5s forwards ease-out;
+      animation-delay: 0.3s;
+      transition: transform 0.3s ease-in-out;
+      text-align: left;
+    }
+    .blog-section h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #36d1dc;
+      margin-bottom: 12px;
+    }
+    .blog-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      text-align: justify;
+      padding: 0 12px;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      vertical-align: middle;
+    }
+    .back-button {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 12px 18px;
+      background: #444;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    .back-button:hover {
+      background: #555;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Home</a>
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Transforming Autodesk's Data Landscape</h1>
+      <p>Join me on a journey where I tackled challenges head-on, revolutionizing data processes and enhancing decision-making.</p>
+    </section>
+
+    <!-- Getting Rid of Adobe Dependency -->
+    <section class="blog-section">
+      <h2>Transforming the Data Workflow 🚀</h2>
+      <p>When I first stepped into Autodesk, I was met with the daunting reality of relying on <strong>manual <span style="color:#ff8c00">Adobe Analytics</span> exports</strong>. This outdated method not only slowed down our reporting but also limited our ability to make timely decisions. Faced with this challenge, I envisioned a solution that would not only streamline our workflow but also empower our teams. By <strong><span style="color:#36d1dc">integrating Snowflake</span></strong> into our processes, I was able to eliminate these inefficiencies and pave the way for a more agile data environment.</p>
+    </section>
+
+    <!-- Snowflake Data Modeling -->
+    <section class="blog-section">
+      <h2>Building a Scalable Data Model ❄️</h2>
+      <p>With the integration of <strong><span style="color:#36d1dc">Snowflake</span></strong>, I embarked on the intricate journey of designing a <strong>high-performance data model</strong>. This involved meticulous planning and execution, focusing on <strong><span style="color:#36d1dc">clustering</span>, <span style="color:#36d1dc">partitioning</span>, and <span style="color:#36d1dc">indexing</span></strong> to optimize query speeds and ensure storage efficiency. Each decision point was critical, as I aimed to create a system that could adapt to our growing needs while maintaining peak performance.</p>
+    </section>
+
+    <!-- Automating Power BI Reporting -->
+    <section class="blog-section">
+      <h2>Power BI Meets Automation ⚡</h2>
+      <p>Recognizing the need for efficiency, I developed <strong><span style="color:#ff8c00">ETL pipelines</span></strong> that automated the ingestion of datasets into <strong><span style="color:#ff8c00">Power BI</span></strong>. This transformation ensured <strong><span style="color:#ff8c00">real-time data access</span></strong>, drastically reducing delays that had previously hampered our analytics. The shift from manual updates to automation not only saved time but also enhanced our ability to respond swiftly to business needs, fostering a culture of agility and innovation.</p>
+    </section>
+
+    <!-- Data Security & Role-Based Access Control -->
+    <section class="blog-section">
+      <h2>Data Security & Compliance 🔐</h2>
+      <p>As we embraced these advancements, ensuring <strong><span style="color:#ffd700">data security</span></strong> became paramount. I implemented <strong><span style="color:#ffd700">Role-Based Access Control (RBAC)</span></strong> within both <strong><span style="color:#ff8c00">Power BI</span></strong> and <strong><span style="color:#36d1dc">Snowflake</span></strong>. This strategic move not only fortified our <strong><span style="color:#ffd700">data security</span></strong> but also empowered teams with controlled access, allowing them to work confidently while adhering to <strong>compliance standards</strong>.</p>
+    </section>
+
+    <!-- Final Impact -->
+    <section class="blog-section">
+      <h2>Business Impact 📈</h2>
+      <p>The culmination of these efforts has led to Autodesk experiencing <strong><span style="color:#32cd32">faster data retrieval</span></strong>, <strong><span style="color:#32cd32">automated analytics</span></strong>, and <strong><span style="color:#32cd32">self-service reporting</span></strong>. Teams are now self-sufficient, significantly reducing their dependency on ad-hoc reports and enabling more informed decision-making. This journey has not only transformed our data landscape but has also set a new standard for how we approach analytics in the future.</p>
+    </section>
+
+  </div>
+</body>
+</html>

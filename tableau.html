@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau Blog Narrative</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #1e1e1e;
+      color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      transition: background 0.5s ease-in-out;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+    }
+    .hero {
+      background: #2a3f5f;
+      padding: 50px 20px;
+      border-radius: 12px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.8s forwards ease-out;
+    }
+    .hero h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #36d1dc; /* changed from #ff8c00 to match blog-section h2 */
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #e0e0e0;
+    }
+    .blog-section {
+      background: #2c2c2c;
+      padding: 35px;
+      margin: 25px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1.5s forwards ease-out;
+      animation-delay: 0.3s;
+      transition: transform 0.3s ease-in-out;
+    }
+    .blog-section h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #36d1dc;
+      margin-bottom: 12px;
+    }
+    .blog-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      text-align: justify;
+      padding: 0 12px;
+    }
+    .back-button {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 12px 18px;
+      background: #444;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+    .back-button:hover {
+      background: #555;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button">← Home</a>
+  <div class="container">
+    <section class="hero">
+      <h1>Tableau: My Journey</h1>
+      <p>Transforming data into powerful insights with interactive dashboards.</p>
+    </section>
+    <section class="blog-section">
+      <h2>Why Tableau?</h2>
+      <p>Tableau captivated me with its ability to create interactive and visually compelling dashboards effortlessly. Its seamless data integration and powerful analytical capabilities made it my go-to tool for data storytelling.</p>
+    </section>
+    <section class="blog-section">
+      <h2>How I Used Tableau</h2>
+      <p>In my projects, I used Tableau to craft intuitive dashboards that help stakeholders make data-driven decisions. I automated reporting processes, leveraged advanced analytics, and built interactive visualizations that made complex data easier to understand.</p>
+    </section>
+    <section class="blog-section">
+      <h2>Tableau in My Work</h2>
+      <p>From analyzing customer behavior to optimizing business strategies, Tableau empowered me to uncover trends and insights efficiently. Its drag-and-drop functionality and deep analytical tools allowed me to transform raw data into meaningful stories.</p>
+    </section>
+  </div>
+</body>
+</html>

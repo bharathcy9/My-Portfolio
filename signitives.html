@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teledoc Health | Bharath Potru</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1e1e1e;
+            color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .hero {
+            background: #2a3f5f;
+            padding: 50px 20px;
+            border-radius: 12px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.8s forwards ease-out;
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ff8c00;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+        .blog-section {
+            background: #2c2c2c;
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s forwards ease-out;
+            animation-delay: 0.3s;
+            transition: transform 0.3s ease-in-out;
+        }
+        .blog-section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #36d1dc;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #36d1dc;
+            padding-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+        .blog-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d0d0d0;
+            text-align: justify;
+            padding: 0 12px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .icon {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+        }
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            padding: 12px 18px;
+            background: #444;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #555;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Home</a>
+    <div class="container">
+        <section class="hero">
+            <h1>Signitives: Transforming Data for Business Insights</h1>
+            <p>At <span style='color: #ffcc00;'>Signitives</span>, I had the thrilling opportunity to work on <span style='color: #ff5733;'>Teledoc Health</span>, where we reshaped business intelligence by migrating from <span style='color: #36d1dc;'>Tableau</span> to <span style='color: #ff8c00;'>Power BI</span>, optimizing data models, and automating workflows. This was not just an upgrade; it was a revolution in how data drove decision-making.</p>
+        </section>
+        <section class="blog-section">
+            <h2>🚀 Revolutionizing Power BI Dashboards</h2>
+            <p>🔄 <span style='color: #ffcc00;'>Revamping dashboards</span> in <span style='color: #ff8c00;'>Power BI</span> wasn't just about aesthetics—it redefined how <span style='color: #36d1dc;'>business stakeholders</span> interacted with data. From outdated, slow reports to interactive, real-time insights, every transformation empowered teams to <span style='color: #4caf50;'>make faster, smarter decisions</span>.</p>
+        </section>
+        <section class="blog-section">
+            <h2>⚡ Automating Data Workflows</h2>
+            <p>🔧 With <span style='color: #36d1dc;'>Azure</span> and <span style='color: #ff5733;'>Apache Spark</span>, we built an automated ETL pipeline that seamlessly integrated multiple data sources. No more waiting for manual updates—everything became real-time, providing <span style='color: #ffcc00;'>instant insights</span> for Teledoc’s critical business operations.</p>
+        </section>
+        <section class="blog-section">
+            <h2>🛡️ Securing & Scaling Data</h2>
+            <p>🔍 Using <span style='color: #36d1dc;'>Hadoop</span>, we optimized massive datasets, ensuring that Power BI dashboards loaded <span style='color: #4caf50;'>lightning fast</span>. At the same time, we enforced <span style='color: #ff5733;'>strict security protocols</span>, ensuring compliance without compromising performance.</p>
+        </section>
+        <section class="blog-section">
+            <h2>🎯 My Impact at Signitives</h2>
+            <p>💡 My journey at <span style='color: #ffcc00;'>Signitives</span> was all about transforming how Teledoc Health leveraged data. I led initiatives in <span style='color: #ff8c00;'>real-time analytics</span>, <span style='color: #36d1dc;'>automated workflows</span>, and <span style='color: #4caf50;'>dashboard optimization</span>, enabling teams to make faster, data-driven decisions. What once took hours now took minutes—fueling an organization-wide culture of efficiency and insight-driven strategy.</p>
+        </section>
+    </div>
+</body>
+</html>

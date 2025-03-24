@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanti Group | Bharath Potru</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1e1e1e;
+            color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .hero {
+            background: #2a3f5f;
+            padding: 50px 20px;
+            border-radius: 12px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.8s forwards ease-out;
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ff8c00;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+        .blog-section {
+            background: #2c2c2c;
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s forwards ease-out;
+            animation-delay: 0.3s;
+            transition: transform 0.3s ease-in-out;
+        }
+        .blog-section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #36d1dc;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #36d1dc;
+            padding-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+        .blog-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d0d0d0;
+            text-align: justify;
+            padding: 0 12px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .icon {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+        }
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            padding: 12px 18px;
+            background: #444;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: #555;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Home</a>
+    <div class="container">
+        <section class="hero">
+            <h1>Avanti Group: My Journey 🚀</h1>
+            <p>Stepping into Avanti Group felt like standing on the edge of a vast ocean of responsibility. The weight of expectation pressed down on me, and I realized that amidst the waves of data and processes, a transformation was not just necessary—it was inevitable.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Boosting Export Strategies 🚢</h2>
+            <p>As I stared at endless spreadsheets, the numbers began to blur, each cell a reminder of the uncertainty that clouded our export strategies. But then, a moment of clarity struck me—hidden within the chaos were patterns waiting to be unveiled. It was then that I discovered the power of a <span class="highlight">Power BI dashboard</span>. This tool became our guiding compass, illuminating the path for stakeholders and transforming our decision-making process.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Optimizing Costs 💰</h2>
+            <p>In my quest for efficiency, I watched as numbers slipped through the cracks like water through my fingers. Each missed opportunity was a leak in our budget. But with a new approach, focusing on strategic <span class="highlight">bulk purchasing</span>, I was able to seal those leaks, transforming our procurement from reactive to proactive and maximizing value at every turn.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Real-Time Inventory & Sales Tracking 📊</h2>
+            <p>The challenges continued to mount as unexpected shipment delays emerged as the villain in our story. Manual tracking methods left us vulnerable, creating blind spots that threatened our operations. But then, like a hero emerging from the shadows, I designed an automated <span class="highlight">Power BI dashboard</span>. It provided <span class="highlight">real-time visibility</span> into our stock levels, predicting and preventing delays, and bringing clarity to our processes.</p>
+        </section>
+        <section class="blog-section">
+            <h2>Building a Support System 🛠️</h2>
+            <p>Before the introduction of Jira, chaos reigned as teams drowned in Excel sheets, missing errors and scrambling to resolve issues manually. It was a foggy windshield obscuring our vision. But with the integration of a <span class="highlight">Jira-based BI support ticket system</span>, clarity emerged. The seamless <span class="highlight">MySQL integration</span> gave us control, empowering our analysts to focus on driving insights and delivering value for the company.</p>
+        </section>
+    </div>
+</body>
+</html>

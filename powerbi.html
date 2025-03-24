@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Potru | Power BI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #1e1e1e;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .hero {
+            background: #2a3f5f;
+            padding: 40px 20px;
+            border-radius: 8px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slide-up 0.8s forwards;
+        }
+        @keyframes slide-up {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: bold;
+            color: #36d1dc;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 16px;
+            color: #dddddd;
+        }
+        .blog-section {
+            background: #2c2c2c;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in 0.8s forwards;
+            animation-delay: 0.3s;
+        }
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .blog-section h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #36d1dc;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #36d1dc;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+        .blog-section p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #dddddd;
+            text-align: justify;
+            padding: 0 10px;
+        }
+        .report-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .report-container img {
+            width: 28%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .report-container img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .back-button {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            padding: 10px 15px;
+            background: #444;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-button">← Home</a>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Power BI: My Journey</h1>
+            <p>Transforming raw data into meaningful insights through automation and visualization.</p>
+        </section>
+
+        <section class="blog-section">
+            <h2>Why Power BI?</h2>
+            <p>Power BI stands out as an intuitive tool that allows both beginners and experts to build insightful reports with ease. Its seamless integration with various data sources and its advanced modeling capabilities make it a go-to solution for businesses.</p>
+        </section>
+
+        <section class="blog-section">
+            <h2>How I Used Power BI</h2>
+            <p>In my projects, I leveraged Power BI to automate reporting workflows, build interactive dashboards, and enhance data storytelling. I optimized refresh schedules to ensure real-time insights and used DAX to implement advanced calculations.</p>
+        </section>
+
+        <section class="blog-section">
+            <h2>Power BI in My Work</h2>
+            <p>From building automated dashboards that track marketing performance to integrating Power BI with Snowflake for large-scale data analysis, I have used Power BI to empower decision-making across teams. My work also involved implementing row-level security and optimizing query performance.</p>
+        </section>
+
+        <section class="blog-section">
+            <h2>Sample Power BI Reports</h2>
+            <div class="report-container">
+                <img src="powerbi-report-1.png" alt="Power BI Report 1">
+                <img src="powerbi-report-2.png" alt="Power BI Report 2">
+                <img src="powerbi-report-3.png" alt="Power BI Report 3">
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
